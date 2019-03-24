@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
+    <script src="jquery-1.11.3.min.js"></script>
+</head>
+
+<script type = "text/javascript">
+        function carregar(pagina){
+            $("#details").load(pagina);
+        }
+</script>
+
+<body>
+    <div class="menuHorizontal">
+        
+        <ul style="margin-left: 20%">
+            <li id="menu"><a onclick="carregar('login.html');"  href="#"><i class="fas fa-user-circle"></i>&nbsp;<b>Login</b></a></li>                     
+            <li id="menu"><a onclick="carregar('hoteis.html');"  href="#"><i class="fas fa-hotel"></i>&nbsp;<b>Hotéis</b></a></li>
+            <li id="menu"><a onclick="carregar('passagens.html');"  href="#"><i class="fas fa-plane-departure"></i>&nbsp;<b>Passagens</b></a></li>
+            <li id="menu"><a onclick="carregar('pacotes.html');"  href="#"><i class="fas fa-globe-americas"></i>&nbsp;<b>Pacotes</b></a></li>
+            
+        </ul>
+        <a href="index.html"><img id="logo" src="images/logo.fw.png"></img></a>
+    </div>
+    <!-- <div class="hero"></div> -->
+    <div id="details">
+        <div id="banner">
+            <!-- <br>Confira nossas melhores promoções! -->
+            <br>CONFIRA NOSSAS MELHORES PROMOÇÕES!
+        </div>
+        <a href="#"><img class="promo" src="images/rio.png" alt="n" height="400px" style="margin-left: 200px; margin-top: 60px"></a>
+        <a href="#"><img class="promo" src="images/santiago.png" alt="n" height="400px" style="margin-left: 100px; margin-top: 60px"></a>
+        <a href="#"><img class="promo" src="images/cairo.png" alt="n" height="400px" style="margin-left: 100px; margin-top: 60px"></a>
+    </div> 
+</body>
+
+</html>
